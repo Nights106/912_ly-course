@@ -1,0 +1,16 @@
+title: 912_LY
+description: learn 912
+template:
+  repo: 912_ly-template
+  name: 912_ly
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
